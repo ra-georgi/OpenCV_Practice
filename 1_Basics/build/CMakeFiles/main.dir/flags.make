@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/reuben/OpenCV_Practice/1_Basics/include
+CXX_INCLUDES = -I/home/reuben/OpenCV_Practice/1_Basics/include -isystem /usr/include/opencv4
 
 CXX_FLAGS = 
 
