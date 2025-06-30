@@ -1,3 +1,0 @@
-/home/reuben/OpenCV_Practice/1_Basics/build/CMakeFiles/main.dir
-/home/reuben/OpenCV_Practice/1_Basics/build/CMakeFiles/edit_cache.dir
-/home/reuben/OpenCV_Practice/1_Basics/build/CMakeFiles/rebuild_cache.dir
