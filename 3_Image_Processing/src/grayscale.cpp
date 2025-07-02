@@ -6,11 +6,12 @@ int main()
     cv::VideoCapture cap{"../videos/test.mp4"};
     if (!cap.isOpened())
     {
-        std::cerr << "Error: Camera not opened \n";
+        std::cerr << "Error opening video";
         return -1;
     }
 
     cv::Mat frame;
+    cv::Mat gray;    
 
     while (true){
         cap >> frame;
@@ -21,7 +22,12 @@ int main()
             continue;
         }
 
-        cv::imshow("Video Playback", frame);
+        // Convert to grayscale
+        cv::cvtColor(frame, gray, cv::COLOR_BGR2GRAY);
+
+        // Show both
+        cv::imshow("Color Frame", frame);
+        cv::imshow("Grayscale Frame", gray);
 
         // Press 'q' to quit early
         if (cv::waitKey(30) == 'q') {
@@ -33,3 +39,6 @@ int main()
     cv::destroyAllWindows();
     return 0;
 }
+
+
+
