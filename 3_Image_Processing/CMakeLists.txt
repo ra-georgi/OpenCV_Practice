@@ -9,5 +9,7 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/results/bin)
 
 
 add_executable(grayscale src/grayscale.cpp)
+add_executable(threshold src/threshold.cpp)
 target_link_libraries(grayscale ${OpenCV_LIBS})
+target_link_libraries(threshold ${OpenCV_LIBS})
 
