@@ -32,7 +32,7 @@ int main()
         cv::adaptiveThreshold(processed_frame, processed_frame, 255, cv::ADAPTIVE_THRESH_GAUSSIAN_C, cv::THRESH_BINARY, 11, 2);
         // Show both
 
-        cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(3, 3));
+        cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(4, 4));
         cv::morphologyEx(processed_frame, processed_frame, cv::MORPH_OPEN, kernel);
 
         cv::imshow("Blurred Frame", processed_frame);
