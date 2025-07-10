@@ -3,6 +3,8 @@
         "iostream": "cpp",
         "array": "cpp",
         "string_view": "cpp",
-        "span": "cpp"
+        "span": "cpp",
+        "bitset": "cpp",
+        "initializer_list": "cpp"
     }
 }

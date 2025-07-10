@@ -9,5 +9,7 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/results/bin)
 
 
 add_executable(transforms src/transforms.cpp)
+add_executable(contours src/contours.cpp)
 
 target_link_libraries(transforms ${OpenCV_LIBS})
+target_link_libraries(contours ${OpenCV_LIBS})

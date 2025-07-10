@@ -23,8 +23,8 @@ int main()
             continue;
         }
 
-        cv::resize(frame, processed_frame, cv::Size(480, 640));
-        cv::flip(processed_frame, processed_frame, 0);
+        cv::resize(frame, processed_frame, cv::Size(640, 480));
+        cv::flip(processed_frame, processed_frame, 1);
 
         cv::imshow("Original", frame);
         cv::imshow("Processed", processed_frame);
@@ -34,6 +34,7 @@ int main()
             break;
         }          
     }
-
+    cap.release();
+    cv::destroyAllWindows();
     return 0;
 }
