@@ -5,6 +5,9 @@
         "string_view": "cpp",
         "span": "cpp",
         "bitset": "cpp",
-        "initializer_list": "cpp"
+        "initializer_list": "cpp",
+        "memory": "cpp",
+        "semaphore": "cpp",
+        "stop_token": "cpp"
     }
 }
