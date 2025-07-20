@@ -2,18 +2,32 @@
 #include <iostream>
 #include "../include/opencv_tool.hpp"
 
-OpenCV_Interact::OpenCV_Interact()
+OpenCV_Interact::OpenCV_Interact(const std::string& file_path):input_type(INVALID)
 {
     std::cout << "Hello from OpenCV Interact! \n";
+    img = cv::imread(file_path);
+
+    if (!img.empty())
+    {
+        std::cout << "Image Loaded \n";
+        input_type = IMAGE;
+    }
+    
+    if (input_type == INVALID)
+    {
+        std::cerr << "Error loading media \n";
+    }
+
 }
 
-int OpenCV_Interact::get_my_num()
+void OpenCV_Interact::print_file_type()
 {
-    return special_num;
-}
-
-void OpenCV_Interact::set_my_num(int ip)
-{
-    special_num = ip;
-    std::cout << "special_num changed to " << special_num << ". \n" ;
+    if (input_type == IMAGE)
+    {
+        std::cout << "File is an image. \n" ;
+    }
+    else
+    {
+        std::cout << "File is an video. \n" ;
+    }
 }

@@ -2,7 +2,6 @@
 
 int main()
 {
-    OpenCV_Interact tool{};
-    std::cout << tool.get_my_num() << '\n';
-    tool.set_my_num(3);
+    OpenCV_Interact tool{"../images/SB.jpg"};
+    tool.print_file_type();
 }

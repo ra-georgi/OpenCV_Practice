@@ -2,16 +2,17 @@
 
 #include <opencv2/opencv.hpp>
 #include <iostream>
+#include <string>
 
 class OpenCV_Interact
 {
     private:
-        // cv::Mat frame{};
-        int special_num{1};
+        enum file_type{IMAGE,VIDEO,INVALID};
+        file_type input_type{};
+        cv::Mat img{};
+        cv::VideoCapture cap{};
 
     public:
-        OpenCV_Interact();
-        int get_my_num();
-        void set_my_num(int ip);
-
+        OpenCV_Interact(const std::string& file_path);
+        void print_file_type();
 };
