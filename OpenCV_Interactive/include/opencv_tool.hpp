@@ -15,5 +15,6 @@ class OpenCV_Interact
         OpenCV_Interact(const std::string& file_path);
         void display_media();
         void print_file_type();
+        void preprocess_media();
         file_type input_type{};
 };

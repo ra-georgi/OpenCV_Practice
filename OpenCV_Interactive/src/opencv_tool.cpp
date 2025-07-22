@@ -69,3 +69,41 @@ void OpenCV_Interact::display_media()
         }
     }
 }
+
+void OpenCV_Interact::preprocess_media()
+{
+    std::cout << "Need to incorporate user input and show original and two variants side by side \n";
+    cv::Mat combined{};
+    cv::Mat gray{};
+    
+    if (input_type == IMAGE)
+    {
+        cv::cvtColor(img, gray, cv::COLOR_BGR2GRAY);
+        cv::cvtColor(gray, gray, cv::COLOR_GRAY2BGR);  // Convert back to 3 channels
+        cv::hconcat(img, gray, combined);
+        cv::imshow("Displaying User image",combined);
+        cv::waitKey();
+    }
+    else
+    {
+        cv::Mat video_frame{};
+
+        while (true)
+        {
+            cap >> video_frame;
+            if (video_frame.empty())
+            {
+                cap.set(cv::CAP_PROP_POS_FRAMES, 0);
+                continue;
+            }
+            cv::cvtColor(video_frame, gray, cv::COLOR_BGR2GRAY);
+            cv::cvtColor(gray, gray, cv::COLOR_GRAY2BGR);  // Convert back to 3 channels
+            cv::hconcat(video_frame, gray, combined);
+            cv::imshow("Displaying User video", combined);
+            if (cv::waitKey(30)=='q')
+            {
+                break;
+            }
+        }
+    }
+}
