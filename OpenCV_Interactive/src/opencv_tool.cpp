@@ -1,6 +1,7 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
 #include "../include/opencv_tool.hpp"
+#include <string>
 
 OpenCV_Interact::OpenCV_Interact(const std::string& file_path):input_type(INVALID)
 {
