@@ -12,7 +12,7 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/results/bin)
 
 # Source files
 set(SOURCES
-    src/opencv_tool.cpp
+    src/opencv_tool_image.cpp
     src/main.cpp
 )
 
