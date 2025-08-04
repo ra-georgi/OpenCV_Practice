@@ -1,4 +1,5 @@
 #include <opencv2/opencv.hpp>
+#include "opencv2/highgui.hpp"
 #include "opencv_tool_image.hpp"
 #include <string>
 #include <iostream>
@@ -27,5 +28,10 @@ void OpenCV_Interact_Image::display_media()
 
 void OpenCV_Interact_Image::preprocess_media()
 {
-    std::cout << "Hi \n";
+    const int slider_threshold_max{255};
+    int slider_threshold_value{127};
+    cv::namedWindow("Tuning Thresholding", cv::WINDOW_AUTOSIZE); 
+    cv::createTrackbar("Threshold value", "Tuning Thresholding", &slider_threshold_value, slider_threshold_max, ThresholdProcessor::onTrackbar, this);
+   
+    
 }
