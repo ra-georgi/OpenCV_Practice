@@ -8,6 +8,8 @@ include_directories(include/)
 
 add_library(dsa_library
     src/arrays_strings_1.cpp
+    src/linked_lists_2.cpp
+    src/hashing_3.cpp
 )
 
 add_executable(main src/main.cpp)

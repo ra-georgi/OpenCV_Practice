@@ -1,3 +1,5 @@
+#include "arrays_strings_1.hpp"
+
 #include <iostream>
 #include <array>
 #include <vector>
