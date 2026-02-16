@@ -10,6 +10,8 @@ add_library(dsa_library
     src/arrays_strings_1.cpp
     src/linked_lists_2.cpp
     src/hashing_3.cpp
+    src/stacks_queues_4.cpp
+    src/binary_search_5.cpp
 )
 
 add_executable(main src/main.cpp)
