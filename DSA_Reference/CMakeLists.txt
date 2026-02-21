@@ -12,6 +12,8 @@ add_library(dsa_library
     src/hashing_3.cpp
     src/stacks_queues_4.cpp
     src/binary_search_5.cpp
+    src/binary_tree_6.cpp
+    src/bst_7.cpp
 )
 
 add_executable(main src/main.cpp)
