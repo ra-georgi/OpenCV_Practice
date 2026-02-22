@@ -6,6 +6,7 @@
 #include "binary_search_5.hpp"
 #include "binary_tree_6.hpp"
 #include "bst_7.hpp"
+#include "graphs_8.hpp"
 
 int main()
 {
@@ -38,14 +39,28 @@ int main()
     // tree_obj.level_order_traversal();
 
     // BINARY SEARCH TREE
-    bst tree_obj{};
-    tree_obj.level_traversal();
-    tree_obj.insert_node(3);
-    tree_obj.insert_node(5);
-    tree_obj.insert_node(2);
-    tree_obj.insert_node(4);
-    tree_obj.insert_node(1);
-    tree_obj.level_traversal();
+    // bst tree_obj{};
+    // tree_obj.level_traversal();
+    // tree_obj.insert_node(3);
+    // tree_obj.insert_node(5);
+    // tree_obj.insert_node(2);
+    // tree_obj.insert_node(4);
+    // tree_obj.insert_node(1);
+    // tree_obj.level_traversal();
+
+    // Graphs: Adjacency matrix
+    // Graph_matrix G_adj_mat(4, false);
+    // G_adj_mat.insert_edge(0,1);
+    // G_adj_mat.insert_edge(0,2);
+    // G_adj_mat.insert_edge(1,3);
+    // G_adj_mat.print_graph();
+
+    Graph_list G_adj_list(4, false);
+    // G_adj_list.insert_edge(0,1);
+    // G_adj_list.insert_edge(0,2);
+    // G_adj_list.insert_edge(1,3);
+    G_adj_list.print_graph();
+
 
 
 }

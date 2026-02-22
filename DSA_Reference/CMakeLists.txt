@@ -14,6 +14,7 @@ add_library(dsa_library
     src/binary_search_5.cpp
     src/binary_tree_6.cpp
     src/bst_7.cpp
+    src/graphs_8.cpp
 )
 
 add_executable(main src/main.cpp)
