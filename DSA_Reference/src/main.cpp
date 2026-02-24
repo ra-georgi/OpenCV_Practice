@@ -55,12 +55,19 @@ int main()
     // G_adj_mat.insert_edge(1,3);
     // G_adj_mat.print_graph();
 
-    Graph_list G_adj_list(4, false);
-    // G_adj_list.insert_edge(0,1);
-    // G_adj_list.insert_edge(0,2);
-    // G_adj_list.insert_edge(1,3);
-    G_adj_list.print_graph();
+    Graph_list G_adj_list(9, false);
+    G_adj_list.insert_edge(0,1);
+    G_adj_list.insert_edge(0,2);
+    G_adj_list.insert_edge(1,3);
+    G_adj_list.insert_edge(2,4);
+    G_adj_list.insert_edge(2,5);
+    G_adj_list.insert_edge(2,6);
+    G_adj_list.insert_edge(3,7);
+    G_adj_list.insert_edge(5,8);
 
+    G_adj_list.print_graph();
+    // G_adj_list.bfs();
+    G_adj_list.dfs();
 
 
 }

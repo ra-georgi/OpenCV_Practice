@@ -54,3 +54,51 @@ void Graph_list::print_graph()
         std::cout << "\n";
     }
 }
+
+void Graph_list::bfs()
+{
+    int src_node = 0;
+    int current_node{};
+    std::unordered_set<int> visited{};
+    std::queue<int> q{};
+    q.push(src_node);
+    visited.insert(src_node);
+
+    while (q.empty()==false)
+    {
+        current_node = q.front();
+        std::cout << current_node << ", ";
+        q.pop();
+        for (int i: adj_list[current_node])
+        {
+            if (not visited.count(i))
+            {
+                q.push(i);
+                visited.insert(i);
+            }
+        }
+    }
+    std::cout << "\n";
+}
+
+void Graph_list::dfs()
+{
+    int source_node = 0;
+    std::unordered_set<int> visited{};
+    visited.insert(source_node);
+    dfs_recursive(source_node, visited);
+    std::cout << "\n ";
+}
+
+void Graph_list::dfs_recursive(int node, std::unordered_set<int>& visited)
+{   
+    std::cout << node << ", ";
+    for (int i: adj_list[node])
+    {
+        if (not visited.count(i)) 
+        {
+            visited.insert(i);
+            dfs_recursive(i, visited);
+        }
+    }
+}

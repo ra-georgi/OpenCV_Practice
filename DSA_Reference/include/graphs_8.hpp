@@ -2,6 +2,8 @@
 #include <iostream>
 #include <vector>
 #include <unordered_map>
+#include <queue>
+#include <unordered_set>
 
 class Graph_matrix
 {
@@ -26,6 +28,9 @@ public:
     Graph_list(int num_nodes, bool direction);
     void insert_edge(int node1, int node2);
     void print_graph();
+    void bfs();
+    void dfs();
+    void dfs_recursive(int node,std::unordered_set<int>& visited);
 };
 
 
