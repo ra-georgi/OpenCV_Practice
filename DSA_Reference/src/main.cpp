@@ -7,6 +7,8 @@
 #include "binary_tree_6.hpp"
 #include "bst_7.hpp"
 #include "graphs_8.hpp"
+#include "lists_9.hpp"
+#include "heap_10.hpp"
 
 int main()
 {
@@ -48,26 +50,32 @@ int main()
     // tree_obj.insert_node(1);
     // tree_obj.level_traversal();
 
-    // Graphs: Adjacency matrix
+    // GRAPHS: ADJACENCY MATRIX
     // Graph_matrix G_adj_mat(4, false);
     // G_adj_mat.insert_edge(0,1);
     // G_adj_mat.insert_edge(0,2);
     // G_adj_mat.insert_edge(1,3);
     // G_adj_mat.print_graph();
 
-    Graph_list G_adj_list(9, false);
-    G_adj_list.insert_edge(0,1);
-    G_adj_list.insert_edge(0,2);
-    G_adj_list.insert_edge(1,3);
-    G_adj_list.insert_edge(2,4);
-    G_adj_list.insert_edge(2,5);
-    G_adj_list.insert_edge(2,6);
-    G_adj_list.insert_edge(3,7);
-    G_adj_list.insert_edge(5,8);
+    // GRAPHS: ADJACENCY LISTS
+    // Graph_list G_adj_list(9, false);
+    // G_adj_list.insert_edge(0,1);
+    // G_adj_list.insert_edge(0,2);
+    // G_adj_list.insert_edge(1,3);
+    // G_adj_list.insert_edge(2,4);
+    // G_adj_list.insert_edge(2,5);
+    // G_adj_list.insert_edge(2,6);
+    // G_adj_list.insert_edge(3,7);
+    // G_adj_list.insert_edge(5,8);
 
-    G_adj_list.print_graph();
-    // G_adj_list.bfs();
-    G_adj_list.dfs();
+    // G_adj_list.print_graph();
+    // // G_adj_list.bfs();
+    // G_adj_list.dfs();
 
+    // STD::LIST (DOUBLY LINKED LIST)
+    // cpp_lists();
+
+    // HEAPS
+    priority_queue_reference();
 
 }

@@ -15,6 +15,8 @@ add_library(dsa_library
     src/binary_tree_6.cpp
     src/bst_7.cpp
     src/graphs_8.cpp
+    src/lists_9.cpp
+    src/heap_10.cpp
 )
 
 add_executable(main src/main.cpp)

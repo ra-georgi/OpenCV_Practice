@@ -15,7 +15,7 @@ void arrays_strings()
     // a.erase(a.begin(),100);
 
     std::vector<int> b{1,2,3,4};               // Dynamic Array
-    b.insert(b.begin()+1,99);                  // Insert & Deletion at between is O(n)
+    b.insert(b.begin()+1,99);                  // Insert & Deletion in between is O(n)
     b.push_back(100);                          // Amortized O(1)
 
     for (int x: b)
