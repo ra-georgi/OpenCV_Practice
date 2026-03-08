@@ -17,6 +17,8 @@ add_library(dsa_library
     src/graphs_8.cpp
     src/lists_9.cpp
     src/heap_10.cpp
+    src/two_pointers_11.cpp
+    src/sliding_window_12.cpp
 )
 
 add_executable(main src/main.cpp)

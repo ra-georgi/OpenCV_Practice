@@ -9,6 +9,8 @@
 #include "graphs_8.hpp"
 #include "lists_9.hpp"
 #include "heap_10.hpp"
+#include "two_pointers_11.hpp"
+#include "sliding_window_12.hpp"
 
 int main()
 {
@@ -75,7 +77,12 @@ int main()
     // STD::LIST (DOUBLY LINKED LIST)
     // cpp_lists();
 
-    // HEAPS
-    priority_queue_reference();
+    // // HEAPS
+    // priority_queue_reference();
 
+    // Pattern: 2 POINTERS
+    // two_pointers_reference();
+
+    // Pattern: SLIDING WINDOW
+    sliding_window_reference();
 }
